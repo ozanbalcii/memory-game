@@ -22,7 +22,7 @@ function App() {
   const shuffleCards = () => {
     const shuffledCards = [...cardIamges, ...cardIamges] //! 2x get cards
       .sort(() => Math.random() - 0.5) //* cards mix with "sort method". When it's a negative number, the items will remain the same order.
-      .map((card) => ({ ...card, id: Math.random() })); //*  each time we map it to a new array where we take the current card
+      .map((card) => ({ ...card, id: Math.random() })); 
     setChoiceOne(null);
     setChoiceTwo(null);
     setCards(shuffledCards);
